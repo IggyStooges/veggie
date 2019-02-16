@@ -1,0 +1,31 @@
+{
+  "name": "veggie",
+  "version": "15.0.0",
+  "private": true,
+  "description": "\"Vegetarians food\"",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "npm test",
+    "build": "gulp build",
+    "start": "gulp start"
+  },
+  "author": "Dmitriy Lobasov",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-csso": "^3.0.1",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-minify": "^3.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-webp": "^4.0.1",
+    "node-sass": "^4.11.0"
+  },
+  "dependencies": {
+    "del": "^3.0.0",
+    "gulp-rename": "^1.4.0"
+  }
+}
