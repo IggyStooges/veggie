@@ -1,0 +1,30 @@
+.page-header {
+  position: relative;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  background-color: $light-gray;
+}
+
+.page-header__nav {
+  width: 100%;
+  padding-bottom: 50%;
+}
+
+.page-header__wrapper {
+  background-image: url("../../img/vegetables.png");
+  background-repeat: no-repeat;
+  background-size: 1900px 100%;
+  padding-left: 60%;
+  padding-top: 2%;
+  padding-right: 8%;
+  padding-bottom: 19%;
+}
+
+.page-header__header {
+  @include header-decoration;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  padding-bottom: 7%;
+}

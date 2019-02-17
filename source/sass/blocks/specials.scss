@@ -1,0 +1,20 @@
+.specials__header {
+  @include header-decoration;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  padding-bottom: 7%;
+}
+
+.specials__list {
+  @include list-reset;
+  width: 78%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.specials__item {
+  display: flex;
+  width: 33%;
+}

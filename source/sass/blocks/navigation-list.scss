@@ -1,0 +1,35 @@
+.navigation-list {
+  @include list-reset;
+  display: flex;
+  width: 100%;
+}
+
+.navigation-list__item {
+  @include list-reset;
+  display: flex;
+  width: auto;
+  width: 17%;
+  padding-right: 3%;
+}
+
+.navigation-list__link {
+  @include link-reset;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 3% 25%;
+
+  &:hover {
+    border: none;
+    border-bottom: 1px solid black;
+  }
+
+  &--active {
+    border: 1px solid black;
+
+    &:hover {
+      border: 1px solid black;
+    }
+  }
+
+}
