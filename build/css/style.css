@@ -223,7 +223,7 @@ body {
   padding-bottom: 50%; }
 
 .page-header__wrapper {
-  background-image: url("../../img/vegetables.png");
+  background-image: url("../img/vegetables.png");
   background-repeat: no-repeat;
   background-size: 1900px 100%;
   padding-left: 60%;
@@ -281,7 +281,7 @@ body {
   width: auto;
   margin: 0;
   padding: 0;
-  background-image: url("../../img/bgcyellow.png"); }
+  background-image: url("../img/bgcyellow.png"); }
 
 .advantages__list {
   list-style: none;
