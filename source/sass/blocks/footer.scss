@@ -1,16 +1,16 @@
-.about-us__header {
+.page-footer__header {
   @include header-decoration;
   padding-bottom: 7%;
   padding-top: 7%;
 }
 
-.about-us__wrapper {
+.page-footer__wrapper {
   box-sizing: border-box;
-  background-image: url("../img/bgcphoto.png");
+  background-image: url("../img/bgcfooter.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  padding-right: 60%;
-  padding-left: 10%;
+  padding-left: 60%;
+  padding-right: 10%;
   padding-bottom: 10%;
 }
 

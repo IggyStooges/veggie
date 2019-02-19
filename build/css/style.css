@@ -191,7 +191,7 @@ body {
   min-width: 768px;
   margin: 0 auto;
   padding: 0;
-  font-family: "OpenSans", "Arial", sans-serif;
+  font-family: "Merriweather", "Arial", sans-serif;
   background-color: #ffffff;
   font-size: 15px;
   line-height: 24px; }
@@ -207,6 +207,7 @@ body {
   border: 0; }
 
 .wrapper {
+  font-size: 18px;
   margin: 0 auto;
   width: 100%;
   box-sizing: border-box; }
@@ -225,7 +226,7 @@ body {
 .page-header__wrapper {
   background-image: url("../img/vegetables.png");
   background-repeat: no-repeat;
-  background-size: 1900px 100%;
+  background-size: 100% 100%;
   padding-left: 60%;
   padding-top: 2%;
   padding-right: 8%;
@@ -236,7 +237,7 @@ body {
   font-size: 40px;
   line-height: 55px;
   font-weight: normal;
-  background-image: url("../../img/decoration-1.png");
+  background-image: url("../img/decoration-1.png");
   background-repeat: no-repeat;
   background-position-y: 100%;
   background-position-x: 50%;
@@ -306,7 +307,7 @@ body {
   font-size: 40px;
   line-height: 55px;
   font-weight: normal;
-  background-image: url("../../img/decoration-1.png");
+  background-image: url("../img/decoration-1.png");
   background-repeat: no-repeat;
   background-position-y: 100%;
   background-position-x: 50%;
@@ -333,8 +334,138 @@ body {
   font-size: 40px;
   line-height: 55px;
   font-weight: normal;
-  background-image: url("../../img/decoration-1.png");
+  background-image: url("../img/decoration-1.png");
   background-repeat: no-repeat;
   background-position-y: 100%;
   background-position-x: 50%;
-  padding-bottom: 7%; }
+  padding-bottom: 7%;
+  padding-top: 7%; }
+
+.about-us__wrapper {
+  box-sizing: border-box;
+  background-image: url("../img/bgcphoto.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding-right: 60%;
+  padding-left: 10%;
+  padding-bottom: 10%; }
+
+.about-us__description {
+  width: 100%;
+  font-size: 30px; }
+
+.about-us__signature {
+  width: 213px;
+  background-image: url("../img/signature.png");
+  margin-left: 56%; }
+
+.menu__wrapper {
+  padding-bottom: 7%;
+  padding-top: 7%;
+  padding-left: 11%;
+  padding-right: 11%; }
+
+.menu__header {
+  text-align: center;
+  font-size: 40px;
+  line-height: 55px;
+  font-weight: normal;
+  background-image: url("../img/decoration-1.png");
+  background-repeat: no-repeat;
+  background-position-y: 100%;
+  background-position-x: 50%;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 5%; }
+
+.menu__navigation-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 29%;
+  margin: 0 auto;
+  justify-content: space-between; }
+
+.menu__navigation-item {
+  width: 25%; }
+
+.menu__navigation-link {
+  text-decoration: none;
+  color: #000000;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 3% 25%; }
+  .menu__navigation-link:hover {
+    border: none;
+    border-bottom: 1px solid black; }
+  .menu__navigation-link--active {
+    border: 1px solid black; }
+    .menu__navigation-link--active:hover {
+      border: 1px solid black; }
+
+.menu__menu-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap; }
+
+.menu__menu-item {
+  display: flex;
+  width: 50%;
+  flex-wrap: wrap; }
+
+.menu__item-name {
+  font-weight: 400; }
+
+.page-footer__header {
+  text-align: center;
+  font-size: 40px;
+  line-height: 55px;
+  font-weight: normal;
+  background-image: url("../img/decoration-1.png");
+  background-repeat: no-repeat;
+  background-position-y: 100%;
+  background-position-x: 50%;
+  padding-bottom: 7%;
+  padding-top: 7%; }
+
+.page-footer__wrapper {
+  box-sizing: border-box;
+  background-image: url("../img/bgcfooter.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding-left: 60%;
+  padding-right: 10%;
+  padding-bottom: 10%; }
+
+.about-us__description {
+  width: 100%;
+  font-size: 30px; }
+
+.about-us__signature {
+  width: 213px;
+  background-image: url("../img/signature.png");
+  margin-left: 56%; }
+
+.contacts-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  padding-bottom: 7%;
+  padding-top: 7%; }
+
+.contacts-list__item {
+  width: 45%; }
+
+.contacts-form__fieldset {
+  border: none; }
+
+.contacts-form textarea,
+.contacts-form input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid black; }

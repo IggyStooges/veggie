@@ -1,0 +1,10 @@
+.contacts-list {
+  @include list-reset;
+  display: flex;
+  padding-bottom: 7%;
+  padding-top: 7%;
+}
+
+.contacts-list__item {
+  width: 45%;
+}

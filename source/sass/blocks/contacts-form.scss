@@ -1,0 +1,13 @@
+.contacts-form__fieldset {
+  border: none;
+}
+
+.contacts-form {
+
+  textarea,
+  input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+  }
+}
