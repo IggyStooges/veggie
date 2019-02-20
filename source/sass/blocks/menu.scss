@@ -1,8 +1,8 @@
 .menu__wrapper {
   padding-bottom: 7%;
   padding-top: 7%;
-  padding-left: 11%;
-  padding-right: 11%;
+  padding-left: 7%;
+  padding-right: 7%;
 }
 
 .menu__header {
@@ -57,6 +57,8 @@
   flex-wrap: wrap;
 }
 
-.menu__item-name {
-  font-weight: 400;
+.menu__item-name,
+.menu__item-price {
+  font-weight: 300;
 }
+

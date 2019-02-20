@@ -6,22 +6,67 @@
   background-image: url("../img/bgcyellow.png");
 }
 
+.advantages__wrapper {
+
+}
+
 .advantages__list {
   @include list-reset;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   box-sizing: border-box;
   width: 100%;
-  padding-left: 11%;
-  padding-right: 11%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .advantages__item {
-  width: 25%;
-  margin-right: 12%;
+  width: 27%;
+  padding-top: 11%;
   text-align: center;
-  font-size: 16px;
+  background-repeat: no-repeat;
+  padding-bottom: 7%;
 
   &:nth-child(3n) {
     margin-right: 0;
   }
+
+  &--turnip {
+    background-image: url("../img/noodle.png");
+    background-position-x: 52%;
+    background-position-y: 20%;
+
+  }
+
+  &--betroot {
+    background-image: url("../img/water.png");
+    background-position-x: 50%;
+    background-position-y: 25%;
+  }
+
+  &--social {
+    background-image: url("../img/sweet.png");
+    background-position-x: 50%;
+    background-position-y: 20%;
+
+  }
+}
+
+.advantages__item-header {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 5%;
+  padding-top: 3%;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.advantages__item-description {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 18px;
 }

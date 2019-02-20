@@ -2,6 +2,8 @@
   @include list-reset;
   display: flex;
   width: 100%;
+  padding-top: 2%;
+  justify-content: space-between;
 }
 
 .navigation-list__item {
@@ -9,7 +11,6 @@
   display: flex;
   width: auto;
   width: 17%;
-  padding-right: 3%;
 }
 
 .navigation-list__link {
@@ -17,17 +18,29 @@
   display: block;
   box-sizing: border-box;
   width: 100%;
-  padding: 3% 25%;
+  padding: 7% 19%;
+  padding-right: 0%;
+  padding-bottom: 11%;
 
   &:hover {
     border: none;
     border-bottom: 1px solid black;
   }
 
+  &:active {
+    opacity: 0.5;
+    border-color: rgba(0, 0, 0, 0.5);
+  }
+
   &--active {
     border: 1px solid black;
 
     &:hover {
+      border: 1px solid black;
+    }
+
+    &:active {
+      opacity: 1;
       border: 1px solid black;
     }
   }

@@ -1,13 +1,41 @@
+.contacts-form {
+  width: 100%;
+  margin-bottom: 15%;
+}
+
 .contacts-form__fieldset {
   border: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 5%;
 }
 
 .contacts-form {
 
   textarea,
   input {
+    padding-left: 3%;
+    font-style: italic;
     background-color: transparent;
     border: none;
     border-bottom: 1px solid black;
   }
+}
+
+.contacts-form__textarea {
+  width: 100%;
+}
+
+.contacts-form__submit-btn {
+  @include button-reset;
+  border: 1px solid black;
+  padding: 2%;
+  display: block;
+  width: 15%;
+  margin: 0 auto;
+  margin-top: 5%;
 }

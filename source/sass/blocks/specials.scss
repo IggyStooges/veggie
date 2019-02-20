@@ -3,13 +3,17 @@
   margin: 0;
   padding: 0;
   width: 100%;
-  padding-bottom: 7%;
+  padding-bottom: 2%;
+  padding-top: 4%;
+  font-weight: 300;
 }
 
 .specials__list {
   @include list-reset;
   width: 78%;
   margin: 0 auto;
+  margin-top: 3%;
+  padding-bottom: 6%;
   display: flex;
   flex-wrap: wrap;
 }
@@ -17,4 +21,32 @@
 .specials__item {
   display: flex;
   width: 33%;
+  text-align: center;
+  background: #f8f8f8;
+
+  &:nth-child(4n),
+  &:nth-child(5n),
+  &:nth-child(6n) {
+    .specials__item-wrap {
+      order: 0;
+    }
+
+    img {
+      order: 1;
+    }
+
+  }
+}
+
+.specials__item-header {
+  font-size: 18px;
+  line-height: 30px;
+  margin-top: 28%;
+  margin-bottom: 8%;
+
+}
+
+.specials__item-description {
+  font-size: 16px;
+  font-weight: 300;
 }
