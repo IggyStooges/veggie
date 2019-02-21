@@ -1,10 +1,21 @@
 .contacts-list {
   @include list-reset;
   display: flex;
-  padding-bottom: 7%;
+  padding-bottom: 13%;
   padding-top: 7%;
+
+  p {
+    margin: 0;
+  }
 }
 
 .contacts-list__item {
   width: 45%;
+}
+
+.contacts-list__item-header {
+  margin: 0;
+  margin-top: 6%;
+  margin-bottom: 4%;
+
 }

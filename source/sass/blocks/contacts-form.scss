@@ -1,6 +1,6 @@
 .contacts-form {
   width: 100%;
-  margin-bottom: 15%;
+  margin-bottom: 33%;
 }
 
 .contacts-form__fieldset {
@@ -8,10 +8,18 @@
   margin: 0;
   padding: 0;
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 5%;
+  margin-bottom: 13%;
+
+  div {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    input {
+      width: 45%;
+    }
+  }
 }
 
 .contacts-form {
@@ -33,9 +41,25 @@
 .contacts-form__submit-btn {
   @include button-reset;
   border: 1px solid black;
-  padding: 2%;
+  padding-top: 2%;
+  padding-bottom: 2%;
   display: block;
-  width: 15%;
+  width: 16%;
   margin: 0 auto;
-  margin-top: 5%;
+  margin-top: 8%;
+  cursor: pointer;
+
+  &:hover {
+    color: #fff;
+    background-color: black;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.contacts-form__header {
+  text-transform: uppercase;
+  margin-bottom: 5%;
 }

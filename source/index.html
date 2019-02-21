@@ -285,8 +285,10 @@
             <form action="POST" class="page-footer__contacts-form contacts-form">
                 <h3 class="contacts-form__header">Contact Form</h3>
                 <fieldset class="contacts-form__fieldset">
-                    <input type="text" id="name" name="name" placeholder="Name">
-                    <input type="email" id="email" name="email" placeholder="Email">
+                    <div class="contacts-form__fieldset-wrap">
+                        <input type="text" id="name" name="name" placeholder="Name">
+                        <input type="email" id="email" name="email" placeholder="Email">
+                    </div>
                 </fieldset>
                 <textarea class="contacts-form__textarea" id="message" name="message" rows="1">Message</textarea>
                 <button type="submit" class="contacts-form__submit-btn" id="submit-btn" name="submit-btn">Send</button>

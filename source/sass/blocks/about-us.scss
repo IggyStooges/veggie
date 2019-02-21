@@ -1,18 +1,19 @@
 .about-us__header {
   @include header-decoration;
-  padding-bottom: 7%;
-  padding-top: 35%;
+  padding-bottom: 7.5%;
+  padding-top: 37%;
   margin: 0;
 }
 
 .about-us__wrapper {
   box-sizing: border-box;
   background-image: url("../img/bgcphoto.png");
+  background-color: #eeefef;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  padding-right: 55%;
-  padding-left: 9%;
-  padding-bottom: 5%;
+  padding-right: 56%;
+  padding-left: 10%;
+  padding-bottom: 9%;
 }
 
 .about-us__description {
