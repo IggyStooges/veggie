@@ -481,6 +481,38 @@ body {
   .menu__navigation-item:last-child {
     margin-right: 0; }
 
+@-webkit-keyframes bordered {
+  from {
+    border-bottom: 1px solid black;
+    border-radius: 2px; }
+  25% {
+    border-radius: 10px; }
+  50% {
+    border: 1px solid black;
+    border-top: none;
+    border-radius: 20px; }
+  75% {
+    border-radius: 25px; }
+  to {
+    border: 1px solid black;
+    border-radius: 30px; } }
+
+@keyframes bordered {
+  from {
+    border-bottom: 1px solid black;
+    border-radius: 2px; }
+  25% {
+    border-radius: 10px; }
+  50% {
+    border: 1px solid black;
+    border-top: none;
+    border-radius: 20px; }
+  75% {
+    border-radius: 25px; }
+  to {
+    border: 1px solid black;
+    border-radius: 30px; } }
+
 .menu__navigation-link {
   text-decoration: none;
   color: #000000;
@@ -490,12 +522,31 @@ body {
   padding: 6% 5%;
   text-align: center; }
   .menu__navigation-link:hover {
-    border: none;
     border-bottom: 1px solid black; }
   .menu__navigation-link--active {
-    border: 1px solid black; }
-    .menu__navigation-link--active:hover {
-      border: 1px solid black; }
+    transition: 2s;
+    -webkit-animation-name: bordered;
+            animation-name: bordered;
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards; }
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg); }
+  to {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg); } }
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg); }
+  to {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg); } }
 
 .menu__list {
   list-style: none;
@@ -503,7 +554,19 @@ body {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around; }
+  justify-content: space-around;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-animation-name: rotate;
+          animation-name: rotate;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
+
+.menu__container {
+  display: flex;
+  justify-content: center; }
 
 .menu__item {
   display: flex;
