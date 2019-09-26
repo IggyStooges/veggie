@@ -24,5 +24,9 @@ menuLinks.forEach(element => {
         menuList.innerHTML = "Unfortunately our chef is now on vacation, when he returns we will update this section"
       }, 2000);
     }
+
+    if (element.classList.contains('menu__navigation-link--drinks')) {
+      menuList.innerHTML = "Sorry, our guests drink a lot, we do not have time to update this section";
+    }
   });
 });

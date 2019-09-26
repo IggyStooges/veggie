@@ -1,14 +1,32 @@
 const menuLinks = document.querySelectorAll(".menu__navigation-link");
-const menuItems = document.querySelectorAll(".menu__navigation-item");
+const mainMenu = document.querySelector(".main-menu").innerHTML;
+const startersMenu = document.querySelector(".starters-menu").innerHTML;
+let menuList = document.querySelector(".menu__list");
+
+menuList.innerHTML = startersMenu;
 
 menuLinks.forEach(element => {
-  element.addEventListener('click', (e) => {
-    menuItems.forEach(item => {
-      item.classList.remove("menu__navigation-item--active");
-    });
+  element.addEventListener("click", (e) => {
     e.preventDefault();
-    if (!element.parentNode.classList.contains("menu__navigation-item--active")) {
-      element.parentNode.classList.add("menu__navigation-item--active");
+    let menuLinksActive = document.querySelector(".menu__navigation-link--active");
+    menuLinksActive.classList.remove("menu__navigation-link--active");
+    element.classList.add("menu__navigation-link--active");
+    if (element.classList.contains('menu__navigation-link--main')) {
+      menuList.innerHTML = mainMenu;
     }
-  })
+    if (element.classList.contains('menu__navigation-link--starters')) {
+      menuList.innerHTML = startersMenu;
+    }
+    if (element.classList.contains('menu__navigation-link--deserts')) {
+      menuList.innerHTML = "Wait a second, we have no data yet, we will contact the chef";
+      
+      setTimeout(() => {
+        menuList.innerHTML = "Unfortunately our chef is now on vacation, when he returns we will update this section"
+      }, 2000);
+    }
+
+    if (element.classList.contains('menu__navigation-link--drinks')) {
+      menuList.innerHTML = "Sorry, our guests drink a lot, we do not have time to update this section";
+    }
+  });
 });
