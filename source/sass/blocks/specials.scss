@@ -10,12 +10,12 @@
 
 .specials__list {
   @include list-reset;
-  width: 78%;
-  margin: 0 auto;
-  margin-top: 3.1%;
-  padding-bottom: 5.4%;
   display: flex;
   flex-wrap: wrap;
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 3%;
+  padding-bottom: 5%;
 }
 
 .specials__item {
@@ -45,7 +45,7 @@
   position: relative;
   font-size: 18px;
   line-height: 30px;
-  margin-top: 27%;
+  margin-top: 15%;
   margin-bottom: 8%;
 
   &::after {
@@ -66,4 +66,5 @@
 
 .specials__item-wrap {
   width: 50%;
+  padding: 0 1%;
 }

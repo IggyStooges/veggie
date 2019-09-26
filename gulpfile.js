@@ -1,21 +1,26 @@
 "use strict";
 
-var gulp = require("gulp");
-var sass = require("gulp-sass");
-var plumber = require("gulp-plumber");
-var postcss = require("gulp-postcss");
-var rename = require("gulp-rename");
-var autoprefixer = require("autoprefixer");
-var server = require("browser-sync").create();
-var csso = require("gulp-csso");
-var imagemin = require("gulp-imagemin");
-var webp = require("gulp-webp");
-var server = require("browser-sync");
-var del = require("del");
+const gulp = require("gulp");
+const sass = require("gulp-sass");
+const plumber = require("gulp-plumber");
+const postcss = require("gulp-postcss");
+const rename = require("gulp-rename");
+const autoprefixer = require("autoprefixer");
+const server = require("browser-sync").create();
+const csso = require("gulp-csso");
+const imagemin = require("gulp-imagemin");
+const webp = require("gulp-webp");
+const svgstore = require("gulp-svgstore");
+const posthml = require("gulp-posthtml");
+const include = require("posthtml-include");
+// const minify = require("gulp-minify");
+const del = require("del");
+const uglify = require('gulp-uglify-es').default;
 
 gulp.task("clean", function () {
   return del("build");
 });
+
 
 gulp.task("copy", function () {
   return gulp.src([
@@ -39,6 +44,15 @@ gulp.task("css", function () {
     .pipe(csso())
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css"))
+    .pipe(server.stream());
+});
+
+gulp.task("compress", function () {
+  return gulp.src('source/js/*.js')
+    .pipe(plumber())
+    .pipe(uglify())
+    .pipe(rename({suffix: '.min'}))
+    .pipe(gulp.dest('build/js'))
     .pipe(server.stream());
 });
 
@@ -75,6 +89,9 @@ gulp.task("sprite", function () {
 
 gulp.task("html", function () {
   return gulp.src("source/*html")
+    .pipe(posthml([
+      include()
+    ]))
     .pipe(gulp.dest("build"));
 });
 
@@ -87,7 +104,9 @@ gulp.task("server", function () {
     ui: false
   });
 
+  gulp.watch("source/js/**/*.js", gulp.series("compress"));
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
+  gulp.watch("source/img/*.svg", gulp.series("sprite", "html"));
   gulp.watch("source/*.html", gulp.series("html"));
 });
 
@@ -96,5 +115,6 @@ gulp.task("refresh", function (done) {
   done();
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "html"));
+gulp.task("sssss", gulp.series("compress"));
+gulp.task("build", gulp.series("clean", "copy", "css", "compress", "sprite", "html"));
 gulp.task("start", gulp.series("build", "server"));

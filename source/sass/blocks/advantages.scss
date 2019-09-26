@@ -22,6 +22,8 @@
   padding-top: 11%;
   text-align: center;
   background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 15%;
 
   &:nth-child(3n) {
     margin-right: 0;
@@ -29,22 +31,15 @@
 
   &--turnip {
     background-image: url("../img/noodle.png");
-    background-position-x: 52%;
-    background-position-y: 20%;
-
   }
 
   &--betroot {
     background-image: url("../img/water.png");
-    background-position-x: 50%;
-    background-position-y: 25%;
+    background-position-y: 18%;
   }
 
   &--social {
     background-image: url("../img/sweet.png");
-    background-position-x: 50%;
-    background-position-y: 20%;
-
   }
 }
 

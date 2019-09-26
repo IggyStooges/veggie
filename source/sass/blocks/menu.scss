@@ -22,18 +22,17 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 33%;
+  width: 70%;
   margin: 0 auto;
   margin-top: 3.5%;
   justify-content: space-between;
 }
 
 .menu__navigation-item {
-  width: 23%;
+  width: 20%;
 
   &:last-child {
     margin-right: 0;
-
   }
 }
 
@@ -42,8 +41,7 @@
   display: block;
   box-sizing: border-box;
   width: 100%;
-  padding-top: 8%;
-  padding-bottom: 6%;
+  padding: 6% 5%;
   text-align: center;
 
   &:hover {
@@ -60,34 +58,33 @@
   }
 }
 
-.menu__menu-list {
+.menu__list {
   @include list-reset;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
-.menu__menu-item {
+.menu__item {
   display: flex;
   justify-content: space-between;
-  width: 37%;
+  width: 40%;
   flex-wrap: wrap;
+
+  span {
+    flex-grow: 1;
+    border-bottom: 2px dotted #000000;
+  }
 }
 
-.menu__item-name,
-.menu__item-price {
+.menu__name,
+.menu__price {
   font-weight: 300;
   font-size: 18px;
-  display: flex;
-  justify-content: space-between;
   margin: 0;
 }
 
-.menu__item-name {
-  margin-bottom: 0.5%;
-}
-
-.menu__item-composition {
+.menu__composition {
+  width: 100%;
   margin-bottom: 5%;
-
 }

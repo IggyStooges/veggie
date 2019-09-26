@@ -15,11 +15,21 @@
         <div class="page-header__wrapper wrapper">
             <nav class="page-header__nav main-nav">
                 <ul class="main-nav__navigation-list navigation-list">
-                    <li class="navigation-list__item"><a class="navigation-list__link navigation-list__link--active">Home</a></li>
-                    <li class="navigation-list__item"><a href="#" class="navigation-list__link">Specials</a></li>
-                    <li class="navigation-list__item"><a href="#" class="navigation-list__link">About</a></li>
-                    <li class="navigation-list__item"><a href="#" class="navigation-list__link">Menu</a></li>
-                    <li class="navigation-list__item"><a href="#" class="navigation-list__link">Contact</a></li>
+                    <li class="navigation-list__item">
+                        <a class="navigation-list__link navigation-list__link--active">Home</a>
+                    </li>
+                    <li class="navigation-list__item">
+                        <a href="#specials" class="navigation-list__link">Specials</a>
+                    </li>
+                    <li class="navigation-list__item">
+                        <a href="#about" class="navigation-list__link">About</a>
+                    </li>
+                    <li class="navigation-list__item">
+                        <a href="#menu" class="navigation-list__link">Menu</a>
+                    </li>
+                    <li class="navigation-list__item">
+                        <a href="#contact" class="navigation-list__link">Contact</a>
+                    </li>
                 </ul>
             </nav>
             <h1 class="page-header__header">
@@ -58,7 +68,7 @@
                 </ul>
             </div>
         </section>
-        <section class="page-main__specials specials">
+        <section class="page-main__specials specials" id="specials">
             <div class="specials__wrapper wrapper">
                 <h2 class="specials__header">This month specials</h2>
                 <ul class="specials__list">
@@ -156,7 +166,7 @@
                 </ul>
             </div>
         </section>
-        <section class="page-main__about-us about-us">
+        <section class="page-main__about-us about-us" id="about">
             <div class="about-us__wrapper wrapper">
                 <h2 class="about-us__header">About us</h2>
                 <p class="about-us__description">
@@ -166,109 +176,34 @@
                 <img src="img/signature.png" alt="подпись" class="about-us__signature" width="213" height="144">
             </div>
         </section>
-        <article class="page-main__menu menu">
+        <article class="page-main__menu menu" id="menu">
             <div class="menu__wrapper wrapper">
                 <h2 class="menu__header">Menu</h2>
                 <nav class="menu__navigation">
-                    <ul class="menu__navigation-list">
-                        <li class="menu__navigation-item"><a href="#" class="menu__navigation-link menu__navigation-link--active">Starters</a></li>
-                        <li class="menu__navigation-item"><a href="#" class="menu__navigation-link">Main Dishes</a></li>
-                        <li class="menu__navigation-item"><a href="#" class="menu__navigation-link">Desserts</a></li>
-                        <li class="menu__navigation-item"><a href="#" class="menu__navigation-link">Drinks</a></li>
+                    <ul class="menu__navigation-list ">
+                        <li class="menu__navigation-item">
+                            <a href="#" class="menu__navigation-link menu__navigation-link--active menu__navigation-link--starters">Starters</a>
+                        </li>
+                        <li class="menu__navigation-item">
+                            <a href="#" class="menu__navigation-link menu__navigation-link--main">Main Dishes</a>
+                        </li>
+                        <li class="menu__navigation-item">
+                            <a href="#" class="menu__navigation-link menu__navigation-link--deserts">Desserts</a>
+                        </li>
+                        <li class="menu__navigation-item">
+                            <a href="#" class="menu__navigation-link menu__navigation-link--drinks">Drinks</a>
+                        </li>
                     </ul>
                 </nav>
-                <ul class="menu__menu-list">
-                    <li class="menu__menu-item">
-                        <h3 class="menu__item-name">SMOKED RICOTTA TERRINE
-                            ........................................................... </h3>
-                        <p class="menu__item-price">12$</p>
-                        <small class="menu__item-composition">ricotta, shallots, cheddar, capers</small>
-                    </li>
-                    <li class="menu__menu-item">
-                        <h3 class="menu__item-name">SAMPHIRE FRITTERS WITH FENNEL CEVICHE
-                            ................................</h3>
-                        <p class="menu__item-price">12$</p>
-                        <small class="menu__item-composition">fresh samphire, plain flour, cornflower, eggs, fennel</small>
-                    </li>
-                    <li class="menu__menu-item">
-                        <h3 class="menu__item-name">PAN FRIED COURGETTE FLOWERS
-                            ................................................</h3>
-                        <p class="menu__item-price">12$</p>
-                        <small class="menu__item-composition"> courgette flowers, goats cheese, red onion, pine nuts</small>
-                    </li>
-                    <li class="menu__menu-item">
-                        <h3 class="menu__item-name">SMOKED RICOTTA TERRINE
-                            ............................................................</h3>
-                        <p class="menu__item-price">12$</p>
-                        <small class="menu__item-composition"> ricotta, shallots, cheddar, capers</small>
-                    </li>
-                    <li class="menu__menu-item">
-                        <h3 class="menu__item-name">PAN FRIED COURGETTE FLOWERS
-                            ................................................</h3>
-                        <p class="menu__item-price">12$</p>
-                        <small class="menu__item-composition"> courgette flowers, goats cheese, red onion, pine nuts</small>
-                    </li>
-                    <li class="menu__menu-item">
-                        <h3 class="menu__item-name">SMOKED RICOTTA TERRINE
-                            ............................................................</h3>
-                        <p class="menu__item-price">12$</p>
-                        <small class="menu__item-composition"> ricotta, shallots, cheddar, capers</small>
-                    </li>
-                    <li class="menu__menu-item">
-                        <h3 class="menu__item-name">SMOKED RICOTTA TERRINE
-                            ............................................................</h3>
-                        <p class="menu__item-price">12$</p>
-                        <small class="menu__item-composition"> ricotta, shallots, cheddar, capers</small>
-                    </li>
-                    <li class="menu__menu-item">
-                        <h3 class="menu__item-name">SMOKED RICOTTA TERRINE
-                            ............................................................</h3>
-                        <p class="menu__item-price">12$</p>
-                        <small class="menu__item-composition"> ricotta, shallots, cheddar, capers</small>
-                    </li>
-                    <li class="menu__menu-item">
-                        <h3 class="menu__item-name">SAMPHIRE FRITTERS WITH FENNEL CEVICHE
-                            ................................</h3>
-                        <p class="menu__item-price">12$</p>
-                        <small class="menu__item-composition">fresh samphire, plain flour, cornflower, eggs, fennel</small>
-                    </li>
-                    <li class="menu__menu-item">
-                        <h3 class="menu__item-name">PAN FRIED COURGETTE FLOWERS
-                            ................................................</h3>
-                        <p class="menu__item-price">12$</p>
-                        <small class="menu__item-composition"> courgette flowers, goats cheese, red onion, pine nuts</small>
-                    </li>
-                    <li class="menu__menu-item">
-                        <h3 class="menu__item-name">SMOKED RICOTTA TERRINE
-                            ............................................................</h3>
-                        <p class="menu__item-price">12$</p>
-                        <small class="menu__item-composition"> ricotta, shallots, cheddar, capers</small>
-                    </li>
-                    <li class="menu__menu-item">
-                        <h3 class="menu__item-name">PAN FRIED COURGETTE FLOWERS
-                            ................................................</h3>
-                        <p class="menu__item-price">12$</p>
-                        <small class="menu__item-composition"> courgette flowers, goats cheese, red onion, pine nuts</small>
-                    </li>
-                    <li class="menu__menu-item">
-                        <h3 class="menu__item-name">SMOKED RICOTTA
-                            TERRINE............................................................</h3>
-                        <p class="menu__item-price">12$</p>
-                        <small class="menu__item-composition"> ricotta, shallots, cheddar, capers</small>
-                    </li>
-                    <li class="menu__menu-item">
-                        <h3 class="menu__item-name">SMOKED RICOTTA
-                            TERRINE............................................................</h3>
-                        <p class="menu__item-price">12$</p>
-                        <small class="menu__item-composition"> ricotta, shallots, cheddar, capers</small>
-                    </li>
+                <ul class="menu__list">
+
                 </ul>
             </div>
         </article>
     </main>
     <footer class="page-footer">
         <div class="page-footer__wrapper">
-            <h2 class="page-footer__header">Contact</h2>
+            <h2 class="page-footer__header" id="contact">Contact</h2>
             <ul class="page-footer__contacts-list contacts-list">
                 <li class="contacts-list__item">
                     <h3 class="contacts-list__item-header">VEGGIE</h3>
@@ -294,11 +229,191 @@
                 <button type="submit" class="contacts-form__submit-btn" id="submit-btn" name="submit-btn">Send</button>
             </form>
             <ul class="page-footer__social-list social-list">
-                <li class="social-list__item"><a href="#" class="social-list__link social-list__link--facebook">facebook</a></li>
-                <li class="social-list__item"><a href="#" class="social-list__link social-list__link--insta">instagramm</a></li>
+                <li class="social-list__item">
+                    <a href="#" class="social-list__link social-list__link--facebook">facebook</a>
+                </li>
+                <li class="social-list__item">
+                    <a href="#" class="social-list__link social-list__link--insta">instagramm</a>
+                </li>
             </ul>
         </div>
     </footer>
+    <template class="starters-menu">
+        <li class="menu__item">
+            <h3 class="menu__name">SMOKED RICOTTA TERRINE</h3>
+            <span></span>
+            <p class="menu__price">12$</p>
+            <small class="menu__composition">ricotta, shallots, cheddar, capers</small>
+        </li>
+        <li class="menu__item">
+            <h3 class="menu__name">SAMPHIRE FRITTERS WITH FENNEL CEVICHE</h3>
+            <span></span>
+            <p class="menu__price">12$</p>
+            <small class="menu__composition">fresh samphire, plain flour, cornflower, eggs, fennel</small>
+        </li>
+        <li class="menu__item">
+            <h3 class="menu__name">PAN FRIED COURGETTE FLOWERS</h3>
+            <span></span>
+            <p class="menu__price">12$</p>
+            <small class="menu__composition"> courgette flowers, goats cheese, red onion, pine nuts</small>
+        </li>
+        <li class="menu__item">
+            <h3 class="menu__name">SMOKED RICOTTA TERRINE</h3>
+            <span></span>
+            <p class="menu__price">12$</p>
+            <small class="menu__composition"> ricotta, shallots, cheddar, capers</small>
+        </li>
+        <li class="menu__item">
+            <h3 class="menu__name">PAN FRIED COURGETTE FLOWERS</h3>
+            <span></span>
+            <p class="menu__price">12$</p>
+            <small class="menu__composition"> courgette flowers, goats cheese, red onion, pine nuts</small>
+        </li>
+        <li class="menu__item">
+            <h3 class="menu__name">SMOKED RICOTTA TERRINE</h3>
+            <span></span>
+            <p class="menu__price">12$</p>
+            <small class="menu__composition"> ricotta, shallots, cheddar, capers</small>
+        </li>
+        <li class="menu__item">
+            <h3 class="menu__name">SMOKED RICOTTA TERRINE</h3>
+            <span></span>
+            <p class="menu__price">12$</p>
+            <small class="menu__composition"> ricotta, shallots, cheddar, capers</small>
+        </li>
+        <li class="menu__item">
+            <h3 class="menu__name">SMOKED RICOTTA TERRINE</h3>
+            <span></span>
+            <p class="menu__price">12$</p>
+            <small class="menu__composition"> ricotta, shallots, cheddar, capers</small>
+        </li>
+        <li class="menu__item">
+            <h3 class="menu__name">SAMPHIRE FRITTERS WITH FENNEL CEVICHE</h3>
+            <span></span>
+            <p class="menu__price">12$</p>
+            <small class="menu__composition">fresh samphire, plain flour, cornflower, eggs, fennel</small>
+        </li>
+        <li class="menu__item">
+            <h3 class="menu__name">PAN FRIED COURGETTE FLOWERS</h3>
+            <span></span>
+            <p class="menu__price">12$</p>
+            <small class="menu__composition"> courgette flowers, goats cheese, red onion, pine nuts</small>
+        </li>
+        <li class="menu__item">
+            <h3 class="menu__name">SMOKED RICOTTA TERRINE</h3>
+            <span></span>
+            <p class="menu__price">12$</p>
+            <small class="menu__composition"> ricotta, shallots, cheddar, capers</small>
+        </li>
+        <li class="menu__item">
+            <h3 class="menu__name">PAN FRIED COURGETTE FLOWERS</h3>
+            <span></span>
+            <p class="menu__price">12$</p>
+            <small class="menu__composition"> courgette flowers, goats cheese, red onion, pine
+                nuts</small>
+        </li>
+        <li class="menu__item">
+            <h3 class="menu__name">SMOKED RICOTTA TERRINE</h3>
+            <span></span>
+            <p class="menu__price">12$</p>
+            <small class="menu__composition"> ricotta, shallots, cheddar, capers</small>
+        </li>
+        <li class="menu__item">
+            <h3 class="menu__name">SMOKED RICOTTA TERRINE</h3>
+            <span></span>
+            <p class="menu__price">12$</p>
+            <small class="menu__composition"> ricotta, shallots, cheddar, capers</small>
+        </li>
+    </template>
+    <template class="main-menu">
+        <li class="menu__item">
+            <h3 class="menu__name">PASTA BOLOGNESE</h3>
+            <span></span>
+            <p class="menu__price">25$</p>
+            <small class="menu__composition">pasta, meat, cheddar, сream</small>
+        </li>
+        <li class="menu__item">
+            <h3 class="menu__name">PASTA CARBONARA</h3>
+            <span></span>
+            <p class="menu__price">30$</p>
+            <small class="menu__composition">pasta, meat, cheddar, сream</small>
+        </li>
+        <li class="menu__item">
+            <h3 class="menu__name">MARGARITA</h3>
+            <span></span>
+            <p class="menu__price">15$</p>
+            <small class="menu__composition">mozarella, tomato, ruccola</small>
+        </li>
+        <li class="menu__item">
+            <h3 class="menu__name">PASTA CARBONARA</h3>
+            <span></span>
+            <p class="menu__price">30$</p>
+            <small class="menu__composition">pasta, meat, cheddar, сream</small>
+        </li>
+        <li class="menu__item">
+            <h3 class="menu__name">QUATTRO FORMADGI</h3>
+            <span></span>
+            <p class="menu__price">25$</p>
+            <small class="menu__composition">parmezan, gorgonzola, mozarella, provolone</small>
+        </li>
+        <li class="menu__item">
+            <h3 class="menu__name">PASTA CARBONARA</h3>
+            <span></span>
+            <p class="menu__price">30$</p>
+            <small class="menu__composition">pasta, meat, cheddar, сream</small>
+        </li>
+        <li class="menu__item">
+            <h3 class="menu__name">QUATTRO FORMADGI</h3>
+            <span></span>
+            <p class="menu__price">25$</p>
+            <small class="menu__composition">parmezan, gorgonzola, mozarella, provolone</small>
+        </li>
+        <li class="menu__item">
+            <h3 class="menu__name">PASTA CARBONARA</h3>
+            <span></span>
+            <p class="menu__price">30$</p>
+            <small class="menu__composition">pasta, meat, cheddar, сream</small>
+        </li>
+        <li class="menu__item">
+            <h3 class="menu__name">QUATTRO FORMADGI</h3>
+            <span></span>
+            <p class="menu__price">25$</p>
+            <small class="menu__composition">parmezan, gorgonzola, mozarella, provolone</small>
+        </li>
+        <li class="menu__item">
+            <h3 class="menu__name">PASTA BOLOGNESE</h3>
+            <span></span>
+            <p class="menu__price">25$</p>
+            <small class="menu__composition">pasta, meat, cheddar, сream</small>
+        </li>
+        <li class="menu__item">
+            <h3 class="menu__name">MARGARITA</h3>
+            <span></span>
+            <p class="menu__price">15$</p>
+            <small class="menu__composition">mozarella, tomato, ruccola</small>
+        </li>
+        <li class="menu__item">
+            <h3 class="menu__name">PASTA BOLOGNESE</h3>
+            <span></span>
+            <p class="menu__price">25$</p>
+            <small class="menu__composition">pasta, meat, cheddar, сream</small>
+        </li>
+        <li class="menu__item">
+            <h3 class="menu__name">MARGARITA</h3>
+            <span></span>
+            <p class="menu__price">15$</p>
+            <small class="menu__composition">mozarella, tomato, ruccola</small>
+        </li>
+        <li class="menu__item">
+            <h3 class="menu__name">PASTA BOLOGNESE</h3>
+            <span></span>
+            <p class="menu__price">25$</p>
+            <small class="menu__composition">pasta, meat, cheddar, сream</small>
+        </li>
+    </template>
+
+
+    <script src="js/script.min.js"></script>
 </body>
 
 </html>
